@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/8Yte7M+1k=",
+  "dgSpecHash": "46TtYWZW71o=",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\Documents\\.NET\\React-net8\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Utente\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Utente\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Utente\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\Utente\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Utente\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0-rc.2.24474.3\\microsoft.aspnetcore.openapi.9.0.0-rc.2.24474.3.nupkg.sha512",
     "C:\\Users\\Utente\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Utente\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
