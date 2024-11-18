@@ -22,6 +22,7 @@ namespace Persistence
                     Category = "drinks",
                     City = "London",
                     Venue = "Pub",
+                    IsCancelled = true
                 },
                 new Activity
                 {
@@ -31,6 +32,8 @@ namespace Persistence
                     Category = "culture",
                     City = "Paris",
                     Venue = "Louvre",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -40,6 +43,8 @@ namespace Persistence
                     Category = "culture",
                     City = "London",
                     Venue = "Natural History Museum",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -49,6 +54,8 @@ namespace Persistence
                     Category = "music",
                     City = "London",
                     Venue = "O2 Arena",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -58,6 +65,8 @@ namespace Persistence
                     Category = "drinks",
                     City = "London",
                     Venue = "Another pub",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -67,6 +76,8 @@ namespace Persistence
                     Category = "drinks",
                     City = "London",
                     Venue = "Yet another pub",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -76,6 +87,8 @@ namespace Persistence
                     Category = "drinks",
                     City = "London",
                     Venue = "Just another pub",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -85,6 +98,8 @@ namespace Persistence
                     Category = "music",
                     City = "London",
                     Venue = "Roundhouse Camden",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -94,6 +109,8 @@ namespace Persistence
                     Category = "travel",
                     City = "London",
                     Venue = "Somewhere on the Thames",
+                    IsCancelled = true
+
                 },
                 new Activity
                 {
@@ -103,6 +120,8 @@ namespace Persistence
                     Category = "film",
                     City = "London",
                     Venue = "Cinema",
+                    IsCancelled = true
+
                 }
             };
 
