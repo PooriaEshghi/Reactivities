@@ -1,15 +1,14 @@
 import { ChangeEvent, useState } from 'react'
 import { Button, Form, FormInput, Segment } from 'semantic-ui-react'
-import { Activity } from '../../../app/models/activity';
+import { useStore } from '../../../app/stores/store';
+import { observer } from 'mobx-react-lite';
 
-interface Props {
-    activity: Activity | undefined;
-    closeForm: () => void;
-    createOrEdit:(activity: Activity) => void;
-    submitting:boolean;
-}
 
-function ActivityForm({ closeForm, activity: selectedActivity, createOrEdit, submitting }: Props) {
+
+function ActivityForm() {
+    const { activityStore } = useStore();
+    const { selectedActivity, createActivity, updateActivity,loading, closeForm} = activityStore;
+
     const initialState = selectedActivity ?? {
         id: '',
         title: '',
@@ -24,8 +23,7 @@ function ActivityForm({ closeForm, activity: selectedActivity, createOrEdit, sub
     const [activity, setActivity] = useState(initialState);
 
     function handleSubmit() {
-        createOrEdit(activity)
-
+        activity.id ? updateActivity(activity) : createActivity(activity);
     }
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
@@ -42,11 +40,11 @@ function ActivityForm({ closeForm, activity: selectedActivity, createOrEdit, sub
                 <FormInput placeholder='Date' type='date' value={activity.date} name='date' onChange={handleInputChange} />
                 <FormInput placeholder='City' value={activity.city} name='city' onChange={handleInputChange} />
                 <FormInput placeholder='Venue' value={activity.venue} name='venue' onChange={handleInputChange} />
-                <Button loading={submitting} floated='right' positive type='submit' content='Submit' />
+                <Button loading={loading} floated='right' positive type='submit' content='Submit' />
                 <Button floated='right' type='button' content='Cancel' onClick={closeForm} />
             </Form>
         </Segment>
     )
 }
 
-export default ActivityForm
+export default observer(ActivityForm)
