@@ -1,8 +1,8 @@
-import { Container } from 'semantic-ui-react';
-import NavBar from './NavBar';
 import { observer } from 'mobx-react-lite';
 import { Outlet, useLocation } from 'react-router-dom';
-import HomePage from '../../features/activities/home/HomePage';
+import { Container } from 'semantic-ui-react';
+import HomePage from '../../features/home/HomePage';
+import NavBar from './NavBar';
 
 function App() {
   const location = useLocation();
