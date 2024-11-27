@@ -1,6 +1,6 @@
 
 import { observer } from 'mobx-react-lite';
-import {Segment, Grid, Icon} from 'semantic-ui-react'
+import {Segment, Grid, Icon, GridColumn} from 'semantic-ui-react'
 import {Activity} from "../../../app/models/activity";
 
 interface Props {
@@ -12,9 +12,9 @@ export default observer(function ActivityDetailedInfo({activity}: Props) {
         <Segment.Group>
             <Segment attached='top'>
                 <Grid>
-                    <Grid.Column width={1}>
+                    <GridColumn width={1}>
                         <Icon size='large' color='teal' name='info'/>
-                    </Grid.Column>
+                    </GridColumn>
                     <Grid.Column width={15}>
                         <p>{activity.description}</p>
                     </Grid.Column>

@@ -1,27 +1,36 @@
+using Application.Core;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Domain;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace Application.Activities
 {
     public class Details
     {
-        public class Query : IRequest<Domain.Activity> // Specifica il namespace completo
+        public class Query : IRequest<Result<Activity>>
         {
             public Guid Id { get; set; }
         }
 
-        public class Handler : IRequestHandler<Query, Domain.Activity> // Specifica il namespace completo
+        public class Handler : IRequestHandler<Query, Result<Activity>>
         {
             private readonly DataContext _context;
 
-            public Handler(DataContext context)
+            public Handler(DataContext context, IMapper mapper)
             {
+               
                 _context = context;
             }
 
-            public async Task<Domain.Activity> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Result<Activity>> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Activities.FindAsync(request.Id);
+                var activity = await _context.Activities.FindAsync(request.Id);
+                    
+
+                return Result<Activity>.Success(activity);
             }
         }
     }
