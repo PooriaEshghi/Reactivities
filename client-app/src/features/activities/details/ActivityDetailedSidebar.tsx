@@ -1,4 +1,4 @@
-import { Segment, List, Label, Item, Image } from 'semantic-ui-react'
+import { Segment, List, Label, Item, Image, ItemContent, ItemHeader, ItemExtra } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 
@@ -26,31 +26,31 @@ export default observer(function ActivityDetailedSidebar () {
                             Host
                         </Label>
                         <Image size='tiny' src={'/assets/user.png'} />
-                        <Item.Content verticalAlign='middle'>
-                            <Item.Header as='h3'>
+                        <ItemContent verticalAlign='middle'>
+                            <ItemHeader as='h3'>
                                 <Link to={`#`}>Bob</Link>
-                            </Item.Header>
-                            <Item.Extra style={{ color: 'orange' }}>Following</Item.Extra>
-                        </Item.Content>
+                            </ItemHeader>
+                            <ItemExtra style={{ color: 'orange' }}>Following</ItemExtra>
+                        </ItemContent>
                     </Item>
 
                     <Item style={{ position: 'relative' }}>
                         <Image size='tiny' src={'/assets/user.png'} />
-                        <Item.Content verticalAlign='middle'>
-                            <Item.Header as='h3'>
+                        <ItemContent verticalAlign='middle'>
+                            <ItemHeader as='h3'>
                                 <Link to={`#`}>Tom</Link>
-                            </Item.Header>
-                            <Item.Extra style={{ color: 'orange' }}>Following</Item.Extra>
-                        </Item.Content>
+                            </ItemHeader>
+                            <ItemExtra style={{ color: 'orange' }}>Following</ItemExtra>
+                        </ItemContent>
                     </Item>
 
                     <Item style={{ position: 'relative' }}>
                         <Image size='tiny' src={'/assets/user.png'} />
-                        <Item.Content verticalAlign='middle'>
-                            <Item.Header as='h3'>
+                        <ItemContent verticalAlign='middle'>
+                            <ItemHeader as='h3'>
                                 <Link to={`#`}>Sally</Link>
-                            </Item.Header>
-                        </Item.Content>
+                            </ItemHeader>
+                        </ItemContent>
                     </Item>
                 </List>
             </Segment>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button, Header, Icon, Segment } from "semantic-ui-react";
+import { Button, Header, Icon, Segment, SegmentInline } from "semantic-ui-react";
 
 export default function NotFound() {
     return (
@@ -8,11 +8,11 @@ export default function NotFound() {
                 <Icon name='search' />
                 Oops - we've looked everywhere but could not find what you are looking for!
             </Header>
-            <Segment.Inline>
+            <SegmentInline>
                 <Button as={Link} to='/activities'>
                     Return to activities page
                 </Button>
-            </Segment.Inline>
+            </SegmentInline>
         </Segment>
     )
 }

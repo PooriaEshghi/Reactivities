@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite'
-import {Segment, Header, Comment, Form, Button} from 'semantic-ui-react'
+import {Segment, Header, Comment, Form, Button, CommentGroup, CommentAvatar, CommentContent, CommentMetadata, CommentAuthor} from 'semantic-ui-react'
 
 export default observer(function ActivityDetailedChat() {
     return (
@@ -14,33 +14,33 @@ export default observer(function ActivityDetailedChat() {
                 <Header>Chat about this event</Header>
             </Segment>
             <Segment attached>
-                <Comment.Group>
+                <CommentGroup>
                     <Comment>
-                        <Comment.Avatar src='/assets/user.png'/>
-                        <Comment.Content>
+                        <CommentAvatar src='/assets/user.png'/>
+                        <CommentContent>
                             <Comment.Author as='a'>Matt</Comment.Author>
-                            <Comment.Metadata>
+                            <CommentMetadata>
                                 <div>Today at 5:42PM</div>
-                            </Comment.Metadata>
+                            </CommentMetadata>
                             <Comment.Text>How artistic!</Comment.Text>
                             <Comment.Actions>
                                 <Comment.Action>Reply</Comment.Action>
                             </Comment.Actions>
-                        </Comment.Content>
+                        </CommentContent>
                     </Comment>
 
                     <Comment>
-                        <Comment.Avatar src='/assets/user.png'/>
-                        <Comment.Content>
-                            <Comment.Author as='a'>Joe Henderson</Comment.Author>
-                            <Comment.Metadata>
+                        <CommentAvatar src='/assets/user.png'/>
+                        <CommentContent>
+                            <CommentAuthor as='a'>Joe Henderson</CommentAuthor>
+                            <CommentMetadata>
                                 <div>5 days ago</div>
-                            </Comment.Metadata>
+                            </CommentMetadata>
                             <Comment.Text>Dude, this is awesome. Thanks so much</Comment.Text>
                             <Comment.Actions>
                                 <Comment.Action>Reply</Comment.Action>
                             </Comment.Actions>
-                        </Comment.Content>
+                        </CommentContent>
                     </Comment>
 
                     <Form reply>
@@ -52,7 +52,7 @@ export default observer(function ActivityDetailedChat() {
                             primary
                         />
                     </Form>
-                </Comment.Group>
+                </CommentGroup>
             </Segment>
         </>
 

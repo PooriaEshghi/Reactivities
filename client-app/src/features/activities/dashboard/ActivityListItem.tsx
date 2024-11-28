@@ -1,21 +1,15 @@
-import { SyntheticEvent, useState } from 'react'
-import { Button, Icon, Item, ItemContent, ItemDescription, ItemExtra, ItemGroup, ItemHeader, ItemImage, ItemMeta, Label, Segment, SegmentGroup } from 'semantic-ui-react'
+import { Button, Icon, Item, ItemContent, ItemDescription, ItemGroup, ItemHeader, ItemImage, Segment, SegmentGroup } from 'semantic-ui-react'
 import { Activity } from '../../../app/models/activity'
 import { Link } from 'react-router-dom'
-import { useStore } from '../../../app/stores/store'
+import { format } from 'date-fns'
 
 interface Props {
     activity: Activity
 }
 
 function ActivityListItem({ activity }: Props) {
-    const { activityStore } = useStore();
-    const { deleteActivity, loading } = activityStore;
-    const [target, setTarget] = useState('');
-    function handleActivityDelete(e: SyntheticEvent<HTMLButtonElement>, id: string) {
-        setTarget(e.currentTarget.name);
-        deleteActivity(id)
-    }
+    
+    
     return (
         <SegmentGroup>
             <Segment>
@@ -36,7 +30,7 @@ function ActivityListItem({ activity }: Props) {
             </Segment>
             <Segment>
                 <span>
-                    <Icon name='clock'>{activity.date}</Icon>
+                    <Icon name='clock'>{format(activity.date!, 'dd MMM yyyy h:mm aa')}</Icon>
                     <Icon name='marker'>{activity.venue}</Icon>
                 </span>
             </Segment>

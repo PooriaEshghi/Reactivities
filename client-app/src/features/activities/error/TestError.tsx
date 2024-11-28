@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Button, Header, Segment} from "semantic-ui-react";
+import {Button, ButtonGroup, Header, Segment} from "semantic-ui-react";
 import axios from 'axios';
 import ValidationError from './ValidationError';
 
@@ -34,14 +34,14 @@ export default function TestErrors() {
         <>
             <Header as='h1' content='Test Error component' />
             <Segment>
-                <Button.Group widths='7'>
+                <ButtonGroup widths='7'>
                     <Button onClick={handleNotFound} content='Not Found' basic primary />
                     <Button onClick={handleBadRequest} content='Bad Request' basic primary />
                     <Button onClick={handleValidationError} content='Validation Error' basic primary />
                     <Button onClick={handleServerError} content='Server Error' basic primary />
                     <Button onClick={handleUnauthorised} content='Unauthorised' basic primary />
                     <Button onClick={handleBadGuid} content='Bad Guid' basic primary />
-                </Button.Group>
+                </ButtonGroup>
             </Segment>
             {errors && <ValidationError errors={errors} />}
         </>
