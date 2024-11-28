@@ -139,3 +139,13 @@ C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Auto
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\API\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

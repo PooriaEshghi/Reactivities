@@ -1,6 +1,3 @@
-// using Application.Core;
-// using AutoMapper;
-// using FluentValidation;
 using Application.Core;
 using AutoMapper;
 using Domain;
@@ -12,10 +9,11 @@ namespace Application.Activities
 {
     public class Edit
     {
-         public class Command : IRequest<Result<Unit>>
+        public class Command : IRequest<Result<Unit>>
         {
             public Activity Activity { get; set; }
         }
+
         public class CommandValidator : AbstractValidator<Command>
         {
             public CommandValidator()
@@ -31,15 +29,15 @@ namespace Application.Activities
 
             public Handler(DataContext context, IMapper mapper)
             {
-                _context = context;
                 _mapper = mapper;
+                _context = context;
             }
 
             public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
                 var activity = await _context.Activities.FindAsync(request.Activity.Id);
 
-                if(activity == null) return null;
+                if (activity == null) return null;
 
                 _mapper.Map(request.Activity, activity);
 
@@ -48,7 +46,6 @@ namespace Application.Activities
                 if (!result) return Result<Unit>.Failure("Failed to update activity");
 
                 return Result<Unit>.Success(Unit.Value);
-
             }
         }
     }

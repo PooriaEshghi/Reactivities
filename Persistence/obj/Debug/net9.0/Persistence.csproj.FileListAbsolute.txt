@@ -8,9 +8,9 @@ C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfoInputs.cache
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.AssemblyInfo.cs
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.sourcelink.json
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persiste.61C28332.Up2Date
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.dll
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\refint\Persistence.dll
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.pdb
 C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\ref\Persistence.dll
-C:\Users\Utente\Documents\.NET\React-net8\Reactivities\Persistence\obj\Debug\net9.0\Persistence.sourcelink.json
